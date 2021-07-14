@@ -1,0 +1,45 @@
+{
+ "properties": {
+  "displayName": "Stg",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "metadata": {
+   "version": "1.0.1",
+   "category": "Storage",
+   "createdBy": "3954df52-7492-49cf-9c64-55e0e9fa90f6",
+   "createdOn": "2021-07-14T10:05:13.5741103Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "tagName": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Tag Name",
+     "description": "Name of the tag, such as 'environment'"
+    }
+   },
+   "tagValue": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Tag Value",
+     "description": "Value of the tag, such as 'production'"
+    }
+   }
+  },
+  "policyRule": {
+   "if": {
+    "not": {
+     "field": "[concat('tags[', parameters('tagName'), ']')]",
+     "equals": "[parameters('tagValue')]"
+    }
+   },
+   "then": {
+    "effect": "deny"
+   }
+  }
+ },
+ "id": "/subscriptions/717d7ff0-8113-4eb4-a79a-fb0ea82657c4/providers/Microsoft.Authorization/policyDefinitions/a4e48916-932d-4d8c-a943-2fc4125de7ea",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "a4e48916-932d-4d8c-a943-2fc4125de7ea"
+}
