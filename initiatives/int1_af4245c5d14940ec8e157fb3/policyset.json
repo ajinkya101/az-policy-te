@@ -1,0 +1,33 @@
+{
+ "properties": {
+  "displayName": "int1",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "Test",
+   "version": "1.0",
+   "createdBy": "3954df52-7492-49cf-9c64-55e0e9fa90f6",
+   "createdOn": "2021-07-14T09:48:58.7225334Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Azure Backup should be enabled for Virtual Machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/013e242c-8828-4970-87b3-ab247555486d",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Storage account keys should not be expired_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/044985bb-afe1-42cd-8a36-9d5d42424537",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/717d7ff0-8113-4eb4-a79a-fb0ea82657c4/providers/Microsoft.Authorization/policySetDefinitions/af4245c5d14940ec8e157fb3",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "af4245c5d14940ec8e157fb3"
+}
